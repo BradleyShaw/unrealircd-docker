@@ -1,0 +1,12 @@
+services:
+  unrealircd:
+    image: ghcr.io/bradleyshaw/unrealircd-docker:latest
+    container_name: unrealircd
+    restart: unless-stopped
+    ports:
+      - "6667:6667"
+      - "6697:6697"
+      - "6900:6900"
+    volumes:
+      - ./conf:/home/ircd/unrealircd/conf
+      - ./data:/home/ircd/unrealircd/data

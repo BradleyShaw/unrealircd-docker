@@ -1,0 +1,15 @@
+# UnrealIRCd runtime data & logs
+data/
+*.log
+*.pid
+
+# SSL private keys & certs
+conf/tls/*.key
+conf/tls/*.pem
+conf/tls/*.crt
+
+# OS/Editor artifacts
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

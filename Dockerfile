@@ -1,7 +1,7 @@
 # --- Build Stage ---
 FROM alpine:3.20 AS builder
 
-ARG UNREAL_VERSION=6.2.7
+ARG UNREAL_VERSION=6.2.7.1
 
 RUN apk add --no-cache \
     build-base \
